@@ -193,6 +193,7 @@ export default class CalendarDay extends Component {
     return (
       <TouchableOpacity
         onPress={this.props.onDateSelected.bind(this, this.props.date)}
+        style={{ zIndex: this.state.selected ? 1 : 0 }}
       >
         <View
           key={this.props.date}
