@@ -89,16 +89,6 @@ export default class CalendarDay extends Component {
             ),
             springDamping: this.props.daySelectionAnimation.animSpringDamping
           },
-          delete: {
-            type: (
-              this.props.daySelectionAnimation.animType ||
-                LayoutAnimation.Types.easeInEaseOut
-            ),
-            property: (
-              this.props.daySelectionAnimation.animProperty ||
-                LayoutAnimation.Properties.opacity
-            )
-          }
         };
         LayoutAnimation.configureNext(configurableAnimation);
       }
